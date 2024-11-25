@@ -23,18 +23,22 @@
               "y": 210
             },
             "size": {
-              "width": 60,
-              "height": 60
+              "width": 100,
+              "height": 100
             },
             "attrs": {
+              "text": {
+                "text": "Server\nWordpress\n6.6.2"
+              },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -118,18 +122,185 @@
               ]
             },
             "id": "ef843fad-6b50-4e64-8171-2354df02d642",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
-              "name": "Process",
+              "name": "Server\nWordpress\n6.6.2",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "42b26e35-7acd-4e45-b3c6-5ce46185977b",
+                  "title": "CVE-2024-31111",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Geben Sie eine Beschreibung dieser Bedrohung an",
+                  "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "cda531f9-8afd-49af-8657-56a581644337",
+                  "title": "CVE-2024-31111",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Manipulation",
+                  "description": "Geben Sie eine Beschreibung dieser Bedrohung an",
+                  "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "9fe6f53e-7d30-438f-b9c6-7675dff98be2",
+                  "title": "CVE-2024-31111",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Erhöhung von Rechten",
+                  "description": "Geben Sie eine Beschreibung dieser Bedrohung an",
+                  "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 230,
+              "y": 70
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "98620133-5848-46d5-a5fb-ed9ec1f9c4f2"
+                },
+                {
+                  "group": "right",
+                  "id": "76ca92b3-db44-4e2e-91c0-84d2c22d237a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "4cd50383-d7ef-46a8-941d-145268e73ab4"
+                },
+                {
+                  "group": "left",
+                  "id": "462fac12-4ee8-4052-976a-3a551cda4d7b"
+                }
+              ]
+            },
+            "id": "ccaa6993-5cd1-422d-b17c-c52a767eb447",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Store",
+              "name": "Store",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
               "threats": []
             }
           }
@@ -138,6 +309,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 4
+    "threatTop": 7
   }
 }
